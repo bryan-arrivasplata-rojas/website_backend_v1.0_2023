@@ -1,0 +1,101 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #4d5bf9;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 0px;
+  box-sizing: border-box;
+  z-index: 999;
+  
+}
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f2f2f2;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+
+
+.app div ul.sidebar-list{
+  padding: 0px;
+}
+
+.app div ul.sidebar-list li{
+  list-style:none;
+  margin: 5px;
+  padding: 10px 6px 10px 6px;
+  cursor: pointer;
+  position: relative;
+}
+.app div ul.sidebar-list li::before{
+  content:'';
+  position: absolute;
+  top: -18px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  }
+  .app div ul.sidebar-list li::after{
+  content:'';
+  position: absolute;
+  top: 45px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+}
+.app div ul.sidebar-list li:hover{
+  background-color: rgb(255, 255, 255);
+  margin-right: 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.app div ul.sidebar-list li:hover::before{
+  background-image: radial-gradient(circle at 0px 0px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 20px, rgb(255, 255, 255) 20px);
+}
+  .app div ul.sidebar-list li:hover::after{
+  background-image: radial-gradient(circle at 0px 20px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 20px, rgb(255, 255, 255) 20px);
+}
+.app div ul.sidebar-list li a{
+  color: white;
+  text-decoration: none;
+}
+.app div ul.sidebar-list li:hover a{
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.app div ul.sidebar-list li.active{
+  background-color: rgb(255, 255, 255);
+  margin-right: 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.app div ul.sidebar-list li.active a{
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+.app div ul.sidebar-list li.active::before{
+  background-image: radial-gradient(circle at 0px 0px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 20px, rgb(255, 255, 255) 20px);
+}
+.app div ul.sidebar-list li.active::after{
+  background-image: radial-gradient(circle at 0px 20px, rgba(0, 0, 0, 0) 20px, rgba(0, 0, 0, 0) 20px, rgb(255, 255, 255) 20px);
+}
+
+
+.cerrar_sesion{
+  position: absolute !important;
+  width: 170px;
+  bottom: 0px;
+  margin-right: 0px;
+  right: 0px;
+}
+.button-sidebar:hover{
+  cursor: pointer;
+}

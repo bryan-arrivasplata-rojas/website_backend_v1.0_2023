@@ -1,0 +1,8 @@
+#navbarSupportedContent{
+    right:0px;
+}
+nav.navbar{
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 2;
+}
